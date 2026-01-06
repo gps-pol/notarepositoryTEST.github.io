@@ -414,34 +414,41 @@
     <p>Please complete the form below to request access to the GPS-POL dataset.</p>
   </header>
 
-  <form>
-    <div class="row gtr-50">
-      <div class="col-6 col-12-mobile">
-        <input type="text" name="name" placeholder="Full Name" required />
-      </div>
-
-      <div class="col-6 col-12-mobile">
-        <input type="email" name="email" placeholder="Email Address" required />
-      </div>
-
-      <div class="col-12">
-        <input type="text" name="institution" placeholder="Institution / Affiliation" required />
-      </div>
-
-      <div class="col-12">
-        <textarea name="request" placeholder="Brief description of requested data and intended use"
-                  rows="6" required></textarea>
-      </div>
-
-      <div class="col-12">
-        <ul class="buttons">
-          <li><input type="submit" value="Submit Request" class="special" /></li>
-        </ul>
-      </div>
-    </div>
-<form action="mailto:globalcampaignrhetoric@wustl.edu"
+  <form action="mailto:globalcampaignrhetoric@wustl.edu"
       method="post"
-      enctype="text/plain"></section>
+      enctype="text/plain">
+
+  <div class="row gtr-50">
+    <div class="col-6 col-12-mobile">
+      <input type="text" name="Full Name" placeholder="Full Name" required />
+    </div>
+
+    <div class="col-6 col-12-mobile">
+      <input type="email" name="Email" placeholder="Email Address" required />
+    </div>
+
+    <div class="col-12">
+      <input type="text" name="Institution" placeholder="Institution / Affiliation" required />
+    </div>
+
+    <div class="col-12">
+      <textarea name="Request"
+                placeholder="Brief description of requested data and intended use"
+                rows="6"
+                required></textarea>
+    </div>
+
+    <div class="col-12">
+      <ul class="buttons">
+        <li>
+          <input type="submit" value="Submit Request" class="special" />
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</form>
+
 									
 			<!-- Footer -->
 				<footer id="footer">
@@ -519,6 +526,7 @@
 	</body>
 
 </html>
+
 
 
 
