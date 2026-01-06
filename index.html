@@ -118,30 +118,23 @@
 .row.gtr-50 {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* space between team members */
-  justify-content: flex-start; /* aligns items to the left */
+  gap: 2rem; /* spacing between team members */
+  justify-content: flex-start; /* align left */
 }
 
 .col-4 {
-  flex: 0 0 calc(33.333% - 2rem);
+  flex: 0 0 calc(33.333% - 2rem); /* 3 per row with gap */
   box-sizing: border-box;
-}
-
-.col-6-medium {
-  flex: 0 0 calc(50% - 2rem);
-}
-
-.col-12-small {
-  flex: 0 0 100%;
 }
 
 .team-member {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 /* Small square images (~2in x 2in) */
 .team-photo {
-  width: 190px;
+  width: 190px;  /* roughly 2 inches */
   height: 190px;
   margin: 0 auto 1rem auto;
   overflow: hidden;
@@ -154,11 +147,24 @@
   object-fit: cover;
   display: block;
 }
+
+/* Responsive: 2 per row on medium, full width on small screens */
+@media (max-width: 992px) {
+  .col-4 {
+    flex: 0 0 calc(50% - 2rem); /* 2 per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .col-4 {
+    flex: 0 0 100%; /* 1 per row */
+  }
+}
 </style>
 
 <div class="row gtr-50">
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/jacob-montgomery.jpg" alt="Dr. Jacob Montgomery">
     </div>
@@ -169,7 +175,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/margit-tavits.jpg" alt="Dr. Margit Tavits">
     </div>
@@ -180,7 +186,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/christopher-lucas.jpg" alt="Dr. Christopher Lucas">
     </div>
@@ -191,7 +197,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/taishi-muraoka.jpg" alt="Dr. Taishi Muraoka">
     </div>
@@ -202,7 +208,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/dahjin-kim.jpg" alt="Dr. Dahjin Kim">
     </div>
@@ -213,7 +219,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/jamie-hicks.jpg" alt="Jamie Hicks">
     </div>
@@ -224,7 +230,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/cecilia-sui.jpg" alt="Cecilia Yuan Sui">
     </div>
@@ -235,7 +241,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/soyeon-jeon.jpg" alt="Soyeon Jeon">
     </div>
@@ -246,7 +252,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/raduan-meira.jpg" alt="Raduan van Velthem Meira">
     </div>
@@ -257,7 +263,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/hongyu-yu.jpg" alt="Hongyu Yu">
     </div>
@@ -268,7 +274,7 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small team-member">
+  <div class="col-4 team-member">
     <div class="team-photo">
       <img src="images/tianlang-zhao.jpg" alt="Tianlang Leona Zhao">
     </div>
@@ -629,6 +635,7 @@
 	</body>
 
 </html>
+
 
 
 
