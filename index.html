@@ -417,8 +417,8 @@
 
 
 
-
-									<!-- Request Dataset Access -->
+									
+<!-- ==================== Request Dataset Access ==================== -->
 <section id="request" class="wrapper style4 special container medium">
   <header class="major">
     <h2>Request Dataset Access</h2>
@@ -426,36 +426,26 @@
   </header>
 
   <div class="request-box">
-    <form action="mailto:globalcampaignrhetoric@wustl.edu"
-          method="post"
-          enctype="text/plain">
+    <form action="mailto:globalcampaignrhetoric@wustl.edu" method="post" enctype="text/plain">
 
       <div class="row gtr-50">
 
-        <!-- Full Name -->
         <div class="col-6 col-12-mobile">
           <input type="text" name="Full Name" placeholder="Full Name" required />
         </div>
 
-        <!-- Email -->
         <div class="col-6 col-12-mobile">
           <input type="email" name="Email" placeholder="Email Address" required />
         </div>
 
-        <!-- Institution -->
         <div class="col-12">
           <input type="text" name="Institution" placeholder="Institution / Affiliation" required />
         </div>
 
-        <!-- Request Description -->
         <div class="col-12">
-          <textarea name="Request"
-                    placeholder="Brief description of requested data and intended use"
-                    rows="6"
-                    required></textarea>
+          <textarea name="Request" placeholder="Brief description of requested data and intended use" rows="6" required></textarea>
         </div>
 
-        <!-- Submit Button -->
         <div class="col-12">
           <ul class="buttons">
             <li>
@@ -469,8 +459,51 @@
   </div>
 </section>
 
+<!-- ==================== Follow Us / Contact ==================== -->
+<section id="contact" class="wrapper style4 special container medium">
+  <div class="contact-box">
+    <p class="follow-text">Follow us on social media</p>
+    <ul class="icons">
+      <li>
+        <a href="https://www.instagram.com/gps_pol" class="icon brands circle fa-instagram" target="_blank" rel="noopener">
+          <span class="label">Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/global-political-social-media-project/" class="icon brands circle fa-linkedin-in" target="_blank" rel="noopener">
+          <span class="label">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://bsky.app/profile/gps-pol.bsky.social" class="icon circle" target="_blank" rel="noopener">
+          <span class="label">Bluesky</span> 🦋
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/gps_pol" class="icon brands circle fa-twitter" target="_blank" rel="noopener">
+          <span class="label">Twitter</span>
+        </a>
+      </li>
+    </ul>
+
+    <p class="follow-text">Email us</p>
+    <a href="mailto:globalcampaignrhetoric@wustl.edu" class="icon solid circle fa-envelope">
+      <span class="label">Email</span>
+    </a>
+  </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer id="footer">
+  <ul class="copyright">
+    <li>&copy; Washington University in St. Louis (Last Updated: Jan 2026)</li>
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+  </ul>
+</footer>
+
+<!-- ==================== CSS ==================== -->
 <style>
-/* Request Form Box */
+/* ---------- Request Box ---------- */
 .request-box {
   background: #f7f7f7;
   padding: 2rem;
@@ -480,84 +513,59 @@
   margin: 0 auto;
 }
 
-/* Input and textarea styling */
 .request-box input[type="text"],
 .request-box input[type="email"],
-.request-b
-
-
-									
-<!-- Footer -->
-<footer id="footer">
-
-  <!-- Social Media -->
-  <div class="footer-social">
-    <p class="follow-text">Follow us on social media</p>
-    <ul class="icons">
-      <li>
-        <a href="https://www.instagram.com/gps_pol"
-           class="icon brands circle fa-instagram"
-           target="_blank" rel="noopener">
-          <span class="label">Instagram</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/global-political-social-media-project/"
-           class="icon brands circle fa-linkedin-in"
-           target="_blank" rel="noopener">
-          <span class="label">LinkedIn</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://bsky.app/profile/gps-pol.bsky.social"
-           class="icon circle"
-           target="_blank" rel="noopener">
-          <span class="label">Bluesky</span> 🦋
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/gps_pol"
-           class="icon brands circle fa-twitter"
-           target="_blank" rel="noopener">
-          <span class="label">Twitter</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Email -->
-  <div class="footer-email">
-    <p class="follow-text">Email us</p>
-    <a href="mailto:globalcampaignrhetoric@wustl.edu"
-       class="icon solid circle fa-envelope">
-      <span class="label">Email</span>
-    </a>
-  </div>
-
-  <!-- Copyright -->
-  <ul class="copyright">
-    <li>&copy; Washington University in St. Louis (Last Updated: Jan 2026)</li>
-    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-  </ul>
-
-</footer>
-
-<style>
-/* Footer styling */
-#footer {
-  padding: 3rem 1rem;
-  background: #222;
-  color: #fff;
-  text-align: center;
+.request-box textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
 }
 
-#footer .follow-text {
-  margin-bottom: 0.5rem;
+.request-box input[type="text"]:focus,
+.request-box input[type="email"]:focus,
+.request-box textarea:focus {
+  border-color: #0078d4;
+  box-shadow: 0 0 5px rgba(0,120,212,0.3);
+  outline: none;
+}
+
+.request-box .buttons input.special {
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.request-box .buttons input.special:hover {
+  background: #005ea3;
+}
+
+/* ---------- Contact Box ---------- */
+.contact-box {
+  background: #222;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.contact-box .follow-text {
   font-weight: bold;
+  margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
 
-#footer .icons {
+.contact-box .icons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -567,11 +575,11 @@
   margin: 0 0 1.5rem 0;
 }
 
-#footer .icons li {
+.contact-box .icons li {
   display: inline-block;
 }
 
-#footer .icon {
+.contact-box .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -584,35 +592,28 @@
   transition: background 0.3s;
 }
 
-#footer .icon:hover {
+.contact-box .icon:hover {
   background: #666;
 }
 
-#footer .footer-email {
-  margin-bottom: 1.5rem;
-}
-
-#footer .footer-email .icon {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#footer ul.copyright {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9rem;
+/* Footer */
+#footer {
+  background: #111;
   color: #aaa;
+  padding: 1.5rem 1rem;
+  text-align: center;
 }
 
-#footer ul.copyright li {
-  display: inline;
-  margin: 0 0.5rem;
+#footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #fff;
 }
 </style>
+
 
 
 		<!-- Scripts -->
@@ -628,6 +629,7 @@
 	</body>
 
 </html>
+
 
 
 
