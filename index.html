@@ -112,14 +112,13 @@
       and collaborates with researchers worldwide.
     </p>
 
-    <!-- Team Grid -->
-    <!-- Add this in your <head> or CSS file -->
+<!-- Team Grid -->
 <style>
 /* Team Grid Styles */
 .row.gtr-50 {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* spacing between team members */
+  gap: 2rem;
 }
 
 .col-4 {
@@ -139,29 +138,29 @@
   text-align: center;
 }
 
-.team-member .image-container {
-  width: 100%;
-  height: 250px; /* fixed height for all images */
+/* Small square images (~2in x 2in) */
+.team-photo {
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 1rem auto;
   overflow: hidden;
-  border-radius: 8px; /* optional rounded corners */
-  margin-bottom: 1rem;
+  border-radius: 8px;
 }
 
-.team-member .image-container img {
+.team-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ensures images fill container without distortion */
+  object-fit: cover;
   display: block;
 }
 </style>
 
-<!-- Team Grid -->
 <div class="row gtr-50">
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/jacob-montgomery.jpg" alt="Dr. Jacob Montgomery">
-    </span>
+    </div>
     <h3>Dr. Jacob Montgomery</h3>
     <p class="team-title">
       Professor of Political Science<br>
@@ -169,10 +168,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/margit-tavits.jpg" alt="Dr. Margit Tavits">
-    </span>
+    </div>
     <h3>Dr. Margit Tavits</h3>
     <p class="team-title">
       Professor of Political Science<br>
@@ -180,10 +179,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/christopher-lucas.jpg" alt="Dr. Christopher Lucas">
-    </span>
+    </div>
     <h3>Dr. Christopher Lucas</h3>
     <p class="team-title">
       Associate Professor of Political Science<br>
@@ -191,10 +190,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/taishi-muraoka.jpg" alt="Dr. Taishi Muraoka">
-    </span>
+    </div>
     <h3>Dr. Taishi Muraoka</h3>
     <p class="team-title">
       Assistant Research Fellow / Professor<br>
@@ -202,10 +201,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/dahjin-kim.jpg" alt="Dr. Dahjin Kim">
-    </span>
+    </div>
     <h3>Dr. Dahjin Kim</h3>
     <p class="team-title">
       Assistant Professor of Asian Studies and Global Affairs<br>
@@ -213,10 +212,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/jamie-hicks.jpg" alt="Jamie Hicks">
-    </span>
+    </div>
     <h3>Jamie Hicks</h3>
     <p class="team-title">
       Project Coordinator II<br>
@@ -224,10 +223,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/cecilia-sui.jpg" alt="Cecilia Yuan Sui">
-    </span>
+    </div>
     <h3>Cecilia Yuan Sui</h3>
     <p class="team-title">
       Graduate Student<br>
@@ -235,10 +234,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/soyeon-jeon.jpg" alt="Soyeon Jeon">
-    </span>
+    </div>
     <h3>Soyeon Jeon</h3>
     <p class="team-title">
       Graduate Student<br>
@@ -246,10 +245,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/raduan-meira.jpg" alt="Raduan van Velthem Meira">
-    </span>
+    </div>
     <h3>Raduan van Velthem Meira</h3>
     <p class="team-title">
       Graduate Student<br>
@@ -257,10 +256,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/hongyu-yu.jpg" alt="Hongyu Yu">
-    </span>
+    </div>
     <h3>Hongyu Yu</h3>
     <p class="team-title">
       Graduate Student<br>
@@ -268,10 +267,10 @@
     </p>
   </div>
 
-  <div class="col-4 col-6-medium col-12-small">
-    <span class="image fit">
+  <div class="col-4 col-6-medium col-12-small team-member">
+    <div class="team-photo">
       <img src="images/tianlang-zhao.jpg" alt="Tianlang Leona Zhao">
-    </span>
+    </div>
     <h3>Tianlang Leona Zhao</h3>
     <p class="team-title">
       Graduate Student<br>
@@ -280,6 +279,7 @@
   </div>
 
 </div>
+
 
 
     <!-- Acknowledgments -->
@@ -356,14 +356,16 @@
   <!-- Divider -->
   <hr />
 
-  <!-- Professional Conferences -->
+  <section class="wrapper style3 container conferences-left">
+
   <header class="major">
     <h2>Professional Conferences</h2>
   </header>
 
   <div class="row">
-    <div class="col-12 col-12-narrower">
+    <div class="col-12">
       <ul class="conference-list">
+
         <li>
           <strong>Cecilia Sui, Soyeon Jeon, Christopher Lucas, Jacob Montgomery, and Margit Tavits.</strong> (2025).
           <em>A Framework for Multilingual Text Analysis of Political Discourse: Detecting Populism in Facebook Posts from 2020–2024 Elections Around the World.</em>
@@ -405,6 +407,7 @@
           <em>Who Uses Facebook to Campaign? Electoral Institutions, Party Characteristics, and Candidates’ Social Media Adoption.</em>
           American Political Science Association, Vancouver, Canada.
         </li>
+
       </ul>
     </div>
   </div>
@@ -413,43 +416,54 @@
 
 
 
+
 									<section id="request" class="wrapper style4 special container medium">
-  <header>
+ <section class="wrapper style2 container special">
+  <header class="major">
     <h2>Request Dataset Access</h2>
     <p>Please complete the form below to request access to the GPS-POL dataset.</p>
   </header>
 
-  <form action="mailto:globalcampaignrhetoric@wustl.edu"
-      method="post"
-      enctype="text/plain">
+  <div class="request-box">
 
-  <div class="row gtr-50">
-    <div class="col-6 col-12-mobile">
-      <input type="text" name="Full Name" placeholder="Full Name" required />
+    <form action="mailto:globalcampaignrhetoric@wustl.edu"
+          method="post"
+          enctype="text/plain">
 
-    <div class="col-6 col-12-mobile">
-      <input type="email" name="Email" placeholder="Email Address" required />
-    </div>
+      <div class="row gtr-50">
 
-    <div class="col-12">
-      <input type="text" name="Institution" placeholder="Institution / Affiliation" required />
-    </div>
+        <div class="col-6 col-12-mobile">
+          <input type="text" name="Full Name" placeholder="Full Name" required />
+        </div>
 
-    <div class="col-12">
-      <textarea name="Request"
-                placeholder="Brief description of requested data and intended use"
-                rows="6"
-                required></textarea>
-    </div>
+        <div class="col-6 col-12-mobile">
+          <input type="email" name="Email" placeholder="Email Address" required />
+        </div>
 
-    <div class="col-12">
-      <ul class="buttons">
-        <li>
-          <input type="submit" value="Submit Request" class="special" />
-        </li>
-      </ul>
-    </div>
+        <div class="col-12">
+          <input type="text" name="Institution" placeholder="Institution / Affiliation" required />
+        </div>
+
+        <div class="col-12">
+          <textarea name="Request"
+                    placeholder="Brief description of requested data and intended use"
+                    rows="6"
+                    required></textarea>
+        </div>
+
+        <div class="col-12">
+          <ul class="buttons">
+            <li>
+              <input type="submit" value="Submit Request" class="special" />
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </form>
+
   </div>
+</section>
 
 </form>
 
@@ -533,6 +547,7 @@
 	</body>
 
 </html>
+
 
 
 
