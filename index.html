@@ -425,50 +425,41 @@
 
 									
 <!-- ==================== Request Dataset Access ==================== -->
-<section id="request" class="wrapper container medium">
-  <div class="request-container">
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    <header class="major" style="text-align: center; margin-bottom: 2rem;">
-      <h2>Request Dataset Access</h2>
-      <p>Please complete the form below to request access to the GPS-POL dataset.</p>
-    </header>
+    // Sanitize input
+    $name = htmlspecialchars(trim($_POST['Full Name']));
+    $email = filter_var(trim($_POST['Email']), FILTER_SANITIZE_EMAIL);
+    $institution = htmlspecialchars(trim($_POST['Institution']));
+    $request = htmlspecialchars(trim($_POST['Request']));
 
-    <div class="request-box">
-      <form action="mailto:globalcampaignrhetoric@wustl.edu" method="post" enctype="text/plain">
+    // Recipient email
+    $to = "globalcampaignrhetoric@wustl.edu";
+    $subject = "GPS-POL Dataset Request from $name";
 
-        <div class="row gtr-50">
+    // Email body
+    $message = "Name: $name\n";
+    $message .= "Email: $email\n";
+    $message .= "Institution / Affiliation: $institution\n\n";
+    $message .= "Request:\n$request\n";
 
-          <div class="col-6 col-12-mobile">
-            <input type="text" name="Full Name" placeholder="Full Name" required />
-          </div>
+    // Headers
+    $headers = "From: no-reply@yourdomain.edu\r\n";
+    $headers .= "Reply-To: $email\r\n";
 
-          <div class="col-6 col-12-mobile">
-            <input type="email" name="Email" placeholder="Email Address" required />
-          </div>
+    // Send email
+    if (mail($to, $subject, $message, $headers)) {
+        echo "<p>Thank you, $name. Your request has been sent successfully.</p>";
+    } else {
+        echo "<p>Sorry, there was a problem sending your request. Please try again later.</p>";
+    }
+} else {
+    echo "<p>Invalid request method.</p>";
+}
+?>
 
-          <div class="col-12">
-            <input type="text" name="Institution" placeholder="Institution / Affiliation" required />
-          </div>
 
-          <div class="col-12">
-            <textarea name="Request" placeholder="Brief description of requested data and intended use" rows="6" required></textarea>
-          </div>
-
-          <div class="col-12" style="text-align: center;">
-            <ul class="buttons">
-              <li>
-                <input type="submit" value="Submit Request" class="special" />
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-      </form>
-    </div>
-
-  </div>
-</section>
 
 <!-- ==================== CSS ==================== -->
 <style>
@@ -696,6 +687,7 @@
 	</body>
 
 </html>
+
 
 
 
