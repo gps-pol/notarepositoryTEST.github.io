@@ -363,351 +363,240 @@
 <!-- Divider -->
 <hr />
 
-<section class="wrapper style3 container conferences-left">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPS-POL Project</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* ---------- Sections ---------- */
+    .wrapper {
+      padding: 2rem 1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
 
-  <header class="major">
-    <h2>Professional Conferences</h2>
-  </header>
+    /* ---------- Conferences ---------- */
+    .conference-list {
+      padding-left: 1.2rem;
+      margin-left: 0;
+      list-style-position: outside;
+    }
+    .conference-list li {
+      margin-bottom: 1rem;
+      line-height: 1.4rem;
+    }
+    .wrapper.style3 header.major {
+      margin-bottom: 1rem;
+    }
 
-  <div class="row">
-    <div class="col-12">
-      <ul class="conference-list" style="padding-left: 1.2rem; margin-left: 0; list-style-position: outside;">
+    /* ---------- Request Box ---------- */
+    .request-box {
+      background: #f9f9f9;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .request-box input[type="text"],
+    .request-box input[type="email"],
+    .request-box textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+    .request-box input:focus,
+    .request-box textarea:focus {
+      border-color: #0078d4;
+      box-shadow: 0 0 5px rgba(0,120,212,0.3);
+      outline: none;
+    }
+    .request-box input[type="submit"] {
+      background: #0078d4;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .request-box input[type="submit"]:hover {
+      background: #005ea3;
+    }
 
-        <li>
-          <strong>Cecilia Sui, Soyeon Jeon, Christopher Lucas, Jacob Montgomery, and Margit Tavits.</strong> (2025).
-          <em>A Framework for Multilingual Text Analysis of Political Discourse: Detecting Populism in Facebook Posts from 2020–2024 Elections Around the World.</em>
-          Annual Summer Meeting of the Society for Political Methodology (PolMeth), Atlanta, Georgia.
-        </li>
+    /* ---------- Contact Box ---------- */
+    .contact-box {
+      background: #222;
+      color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .contact-box .follow-text {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .contact-box .icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+    }
+    .contact-box .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #444;
+      color: #fff;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .contact-box .icon:hover {
+      background: #666;
+    }
 
-        <li>
-          <strong>Rex Weiye Deng, Taishi Muraoka, and Margit Tavits.</strong> (2025).
-          <em>Exploiting Extremism: Radical Right Parties’ Responses to Right-Wing Violence.</em>
-          American Political Science Association, Vancouver, Canada.
-        </li>
+    /* ---------- Footer ---------- */
+    #footer {
+      background: #111;
+      color: #aaa;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    #footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    #footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
 
-        <li>
-          <strong>Cecilia Sui, Soyeon Jeon, Christopher Lucas, Jacob Montgomery, and Margit Tavits.</strong> (2025).
-          <em>One Language Is Enough: Using Transfer Learning to Detect Populist Rhetoric Across 25 Languages Without Translation.</em>
-          American Political Science Association, Vancouver, Canada.
-        </li>
-
-        <li>
-          <strong>Ruilin Lai, Margit Tavits, Jacob Montgomery, and Christopher Lucas.</strong> (2025).
-          <em>The Emotional Architecture of Populism: The Divergent Effects of Anti-Elite and People-Centric Frames.</em>
-          European Political Science Association, Madrid, Spain.
-        </li>
-
-        <li>
-          <strong>Ruilin Lai, Margit Tavits, Jacob Montgomery, and Christopher Lucas.</strong> (2025).
-          <em>The Emotional Architecture of Populism: The Divergent Effects of Anti-Elite and People-Centric Frames.</em>
-          International Society for Political Psychology, Prague, Czech Republic.
-        </li>
-
-        <li>
-          <strong>Raduan van Velthem Meira, Jacob Montgomery, and Taishi Muraoka.</strong> (2025).
-          <em>Which Candidates Campaign (on Social Media)? A Comparative Analysis of Electoral and Party Influences on Candidates’ Use of Facebook.</em>
-          Midwest Political Science Association, Chicago, IL.
-        </li>
-
-        <li>
-          <strong>Raduan van Velthem Meira, Jacob Montgomery, and Taishi Muraoka.</strong> (2025).
-          <em>Who Uses Facebook to Campaign? Electoral Institutions, Party Characteristics, and Candidates’ Social Media Adoption.</em>
-          American Political Science Association, Vancouver, Canada.
-        </li>
-
-      </ul>
-    </div>
-  </div>
-
-</section>
-
-					
-<!-- ==================== Request Dataset Access ==================== -->
-<section id="request" class="wrapper style4 special container">
-  <div class="request-box" style="
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 2rem 2.5rem;
-    max-width: 800px;
-    margin: 2rem auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  ">
-    <header class="major" style="text-align:center; margin-bottom:2rem;">
-      <h2>Request Dataset Access</h2>
-      <p>Please complete the form below to request access to the GPS-POL dataset.</p>
+  <!-- ==================== Professional Conferences ==================== -->
+  <section class="wrapper style3 container conferences-left">
+    <header class="major">
+      <h2>Professional Conferences</h2>
     </header>
-	  <form action="https://formsubmit.co/globalcampaignrhetoric@wustl.edu" method="POST">
-  <!-- Hidden fields -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://yourusername.github.io/thank-you.html">
 
-  <!-- Full Name -->
-  <input type="text" name="Full Name" placeholder="Full Name" required>
-
-  <!-- Email -->
-  <input type="email" name="Email" placeholder="Email Address" required>
-
-  <!-- Institution -->
-  <input type="text" name="Institution" placeholder="Institution / Affiliation" required>
-
-  <!-- Request Description -->
-  <textarea name="Request" placeholder="Brief description of requested data and intended use" rows="5" required></textarea>
-
-  <input type="submit" value="Submit Request">
-</form>
-
-    
+    <div class="row">
+      <div class="col-12">
+        <ul class="conference-list">
+          <li>
+            <strong>Cecilia Sui, Soyeon Jeon, Christopher Lucas, Jacob Montgomery, and Margit Tavits.</strong> (2025).
+            <em>A Framework for Multilingual Text Analysis of Political Discourse: Detecting Populism in Facebook Posts from 2020–2024 Elections Around the World.</em>
+            Annual Summer Meeting of the Society for Political Methodology (PolMeth), Atlanta, Georgia.
+          </li>
+          <li>
+            <strong>Rex Weiye Deng, Taishi Muraoka, and Margit Tavits.</strong> (2025).
+            <em>Exploiting Extremism: Radical Right Parties’ Responses to Right-Wing Violence.</em>
+            American Political Science Association, Vancouver, Canada.
+          </li>
+          <li>
+            <strong>Cecilia Sui, Soyeon Jeon, Christopher Lucas, Jacob Montgomery, and Margit Tavits.</strong> (2025).
+            <em>One Language Is Enough: Using Transfer Learning to Detect Populist Rhetoric Across 25 Languages Without Translation.</em>
+            American Political Science Association, Vancouver, Canada.
+          </li>
+          <li>
+            <strong>Ruilin Lai, Margit Tavits, Jacob Montgomery, and Christopher Lucas.</strong> (2025).
+            <em>The Emotional Architecture of Populism: The Divergent Effects of Anti-Elite and People-Centric Frames.</em>
+            European Political Science Association, Madrid, Spain.
+          </li>
+          <li>
+            <strong>Ruilin Lai, Margit Tavits, Jacob Montgomery, and Christopher Lucas.</strong> (2025).
+            <em>The Emotional Architecture of Populism: The Divergent Effects of Anti-Elite and People-Centric Frames.</em>
+            International Society for Political Psychology, Prague, Czech Republic.
+          </li>
+          <li>
+            <strong>Raduan van Velthem Meira, Jacob Montgomery, and Taishi Muraoka.</strong> (2025).
+            <em>Which Candidates Campaign (on Social Media)? A Comparative Analysis of Electoral and Party Influences on Candidates’ Use of Facebook.</em>
+            Midwest Political Science Association, Chicago, IL.
+          </li>
+          <li>
+            <strong>Raduan van Velthem Meira, Jacob Montgomery, and Taishi Muraoka.</strong> (2025).
+            <em>Who Uses Facebook to Campaign? Electoral Institutions, Party Characteristics, and Candidates’ Social Media Adoption.</em>
+            American Political Science Association, Vancouver, Canada.
+          </li>
+        </ul>
       </div>
-    </form>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- ==================== CSS ==================== -->
-<style>
-.request-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
+  <!-- ==================== Request Dataset Access ==================== -->
+  <section id="request" class="wrapper style4 special container">
+    <div class="request-box">
+      <header class="major" style="text-align:center; margin-bottom:1.5rem;">
+        <h2>Request Dataset Access</h2>
+        <p>Please complete the form below to request access to the GPS-POL dataset.</p>
+      </header>
 
-.request-box {
-  background: #f9f9f9; /* light gray background */
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border: 1px solid #e0e0e0;
-}
+      <form action="https://formsubmit.co/globalcampaignrhetoric@wustl.edu" method="POST">
+        <!-- Hidden fields -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourusername.github.io/thank-you.html">
 
-.request-box input,
-.request-box textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
+        <input type="text" name="Full Name" placeholder="Full Name" required>
+        <input type="email" name="Email" placeholder="Email Address" required>
+        <input type="text" name="Institution" placeholder="Institution / Affiliation" required>
+        <textarea name="Request" placeholder="Brief description of requested data and intended use" rows="5" required></textarea>
+        <input type="submit" value="Submit Request">
+      </form>
+    </div>
+  </section>
 
-.request-box input:focus,
-.request-box textarea:focus {
-  border-color: #0077cc;
-  box-shadow: 0 0 5px rgba(0,119,204,0.3);
-  outline: none;
-}
+  <!-- ==================== Follow Us / Contact ==================== -->
+  <section id="contact" class="wrapper style4 special container">
+    <div class="contact-box">
+      <p class="follow-text">Follow us on social media</p>
+      <ul class="icons">
+        <li><a href="https://www.instagram.com/gps_pol" class="icon brands circle fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+        <li><a href="https://www.linkedin.com/in/global-political-social-media-project/" class="icon brands circle fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://bsky.app/profile/gps-pol.bsky.social" class="icon circle" target="_blank"><span class="label">Bluesky</span> 🦋</a></li>
+        <li><a href="https://twitter.com/gps_pol" class="icon brands circle fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+      </ul>
 
-.request-box .buttons input.special {
-  background-color: #0077cc;
-  color: white;
-  font-weight: bold;
-  padding: 0.75rem 2rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.request-box .buttons input.special:hover {
-  background-color: #005fa3;
-}
-</style>
-
-
-<!-- ==================== Follow Us / Contact ==================== -->
-<section id="contact" class="wrapper style4 special container medium">
-  <div class="contact-box">
-    <p class="follow-text">Follow us on social media</p>
-    <ul class="icons">
-      <li>
-        <a href="https://www.instagram.com/gps_pol" class="icon brands circle fa-instagram" target="_blank" rel="noopener">
-          <span class="label">Instagram</span>
+      <div class="email-contact" style="margin-top:1rem;">
+        <p class="follow-text" style="margin-bottom:0.5rem; font-weight:bold;">Email us</p>
+        <a href="mailto:globalcampaignrhetoric@wustl.edu" 
+           class="icon solid circle fa-envelope" 
+           style="display:inline-flex; align-items:center; justify-content:center; font-size:2rem; width:60px; height:60px; border-radius:50%; text-decoration:none; background-color:#333; color:#fff;">
+          <span class="label" style="display:none;">Email</span>
         </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/global-political-social-media-project/" class="icon brands circle fa-linkedin-in" target="_blank" rel="noopener">
-          <span class="label">LinkedIn</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://bsky.app/profile/gps-pol.bsky.social" class="icon circle" target="_blank" rel="noopener">
-          <span class="label">Bluesky</span> 🦋
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/gps_pol" class="icon brands circle fa-twitter" target="_blank" rel="noopener">
-          <span class="label">Twitter</span>
-        </a>
-      </li>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer id="footer">
+    <ul class="copyright" style="list-style:none; padding:0; margin:0;">
+      <li>&copy; Washington University in St. Louis (Last Updated: Jan 2026)</li>
+      <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
     </ul>
+  </footer>
 
-   <section id="contact">
-  <div class="email-contact" style="text-align: center; margin: 2rem 0;">
-    <p class="follow-text" style="margin-bottom: 0.5rem; font-weight: bold;">Email us</p>
-    <a href="mailto:globalcampaignrhetoric@wustl.edu" 
-       class="icon solid circle fa-envelope" 
-       style="display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; width: 60px; height: 60px; border-radius: 50%; text-decoration: none; background-color: #333; color: #fff;">
-      <span class="label" style="display: none;">Email</span>
-    </a>
-  </div>
-</section>
-
-	  <!-- ==================== Footer ==================== -->
-<footer id="footer" style="
-  text-align:center;
-  font-size:0.8rem;
-  color:#fff;             /* Make text white for readability */
-  padding:1rem 0;
-  border-top:1px solid #444;
-  margin-top:2rem;
-  background-color:#333;  /* Dark gray background */
-">
-  <ul class="copyright" style="list-style:none; padding:0; margin:0;">
-    <li>&copy; Washington University in St. Louis (Last Updated: Jan 2026)</li>
-    <li>Design: <a href="http://html5up.net" target="_blank" rel="noopener" style="color:#fff; text-decoration:none;">HTML5 UP</a></li>
-  </ul>
-</footer>
-
-<!-- ==================== CSS ==================== -->
-<style>
-/* ---------- Request Box ---------- */
-.request-box {
-  background: #f7f7f7;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.request-box input[type="text"],
-.request-box input[type="email"],
-.request-box textarea {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  transition: border 0.3s, box-shadow 0.3s;
-}
-
-.request-box input[type="text"]:focus,
-.request-box input[type="email"]:focus,
-.request-box textarea:focus {
-  border-color: #0078d4;
-  box-shadow: 0 0 5px rgba(0,120,212,0.3);
-  outline: none;
-}
-
-.request-box .buttons input.special {
-  background: #0078d4;
-  color: #fff;
-  border: none;
-  padding: 0.8rem 2rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s;
-}
-
-.request-box .buttons input.special:hover {
-  background: #005ea3;
-}
-
-/* ---------- Contact Box ---------- */
-.contact-box {
-  background: #222;
-  color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 800px;
-  margin: 2rem auto;
-}
-
-.contact-box .follow-text {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.contact-box .icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem 0;
-}
-
-.contact-box .icons li {
-  display: inline-block;
-}
-
-.contact-box .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: #444;
-  color: #fff;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.contact-box .icon:hover {
-  background: #666;
-}
-
-/* Footer */
-#footer {
-  background: #111;
-  color: #aaa;
-  padding: 1.5rem 1rem;
-  text-align: center;
-}
-
-#footer a {
-  color: #aaa;
-  text-decoration: none;
-}
-
-#footer a:hover {
-  color: #fff;
-}
-</style>
-
-
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
