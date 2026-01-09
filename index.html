@@ -615,27 +615,33 @@
     </div>
   </section>
 
-  <!-- ==================== Request Dataset Access ==================== -->
-  <section id="request" class="wrapper style4 special container">
-    <div class="request-box">
-      <header class="major" style="text-align:center; margin-bottom:0rem;">
-        <h2>Request Dataset Access</h2>
-        <p>Please complete the form below to request access to the GPS-POL dataset.</p>
-      </header>
+<!-- ==================== Request Dataset Access ==================== -->
+<section id="request" class="wrapper style4 special container">
+  <div class="request-box" style="max-width:600px; margin:0 auto; text-align:center;">
 
-      <form action="https://formsubmit.co/globalcampaignrhetoric@wustl.edu" method="POST">
-        <!-- Hidden fields -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://yourusername.github.io/thank-you.html">
+    <header class="major" style="text-align:center; margin-bottom:1.5rem;">
+      <h2>Request Dataset Access</h2>
+      <p>Please complete the form below to request access to the GPS-POL dataset.</p>
+    </header>
 
-        <input type="text" name="Full Name" placeholder="Full Name" required>
-        <input type="email" name="Email" placeholder="Email Address" required>
-        <input type="text" name="Institution" placeholder="Institution / Affiliation" required>
-        <textarea name="Request" placeholder="Brief description of requested data and intended use" rows="5" required></textarea>
-        <input type="submit" value="Submit Request">
-      </form>
-    </div>
-  </section>
+    <form action="https://formsubmit.co/globalcampaignrhetoric@wustl.edu" method="POST" style="display:flex; flex-direction:column; gap:1em;">
+      <!-- Disable captcha -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redirect to thank-you page (must exist) -->
+      <input type="hidden" name="_next" value="https://globalcampaignrhetoric.github.io/thank-you.html">
+
+      <input type="text" name="Full Name" placeholder="Full Name" required style="padding:0.8em; border-radius:5px; border:1px solid #ccc;">
+      <input type="email" name="Email" placeholder="Email Address" required style="padding:0.8em; border-radius:5px; border:1px solid #ccc;">
+      <input type="text" name="Institution" placeholder="Institution / Affiliation" required style="padding:0.8em; border-radius:5px; border:1px solid #ccc;">
+      <textarea name="Request" placeholder="Brief description of requested data and intended use" rows="5" required style="padding:0.8em; border-radius:5px; border:1px solid #ccc;"></textarea>
+      
+      <input type="submit" value="Submit Request" style="background-color:#000; color:#fff; border:none; padding:1em; border-radius:5px; cursor:pointer; font-weight:bold;">
+    </form>
+
+  </div>
+</section>
+
+
 
   <!-- ==================== Follow Us / Contact ==================== -->
   <section id="contact" class="wrapper style4 special container">
@@ -669,6 +675,7 @@
 
 </body>
 </html>
+
 
 
 
