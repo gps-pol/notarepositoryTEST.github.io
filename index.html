@@ -616,30 +616,44 @@
   </section>
 
 <!-- ==================== Request Dataset Access ==================== -->
+	
 <section id="request" class="wrapper style4 special container">
   <div class="request-box" style="max-width:900px; margin:0 auto; text-align:center;">
+	
+<form action="https://formsubmit.co/globalcampaignrhetoric@wustl.edu" method="POST"
+      style="display:flex; flex-direction:column; gap:1em;">
 
-    <header class="major" style="text-align:center; margin-bottom:1.5rem;">
-      <h2>Request Dataset Access</h2>
-      <p>Please complete the form below to request access to the GPS-POL dataset.</p>
-    </header>
+  <!-- REQUIRED anti-blocking fields -->
+  <input type="hidden" name="_subject" value="GPS-POL Dataset Access Request">
+  <input type="hidden" name="_replyto" value="%Email%">
+  <input type="hidden" name="_template" value="table">
 
-    <form action="https://formsubmit.co/globalcampaignrhetoric@wustl.edu" method="POST" style="display:flex; flex-direction:column; gap:1em;">
-      <!-- Disable captcha -->
-      <input type="hidden" name="_captcha" value="false">
-      <!-- Redirect to a valid thank-you page -->
-      <input type="hidden" name="_next" value="https://gps-pol.github.io/thank-you.html">
+  <!-- Settings -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://gps-pol.github.io/thank-you.html">
 
-      <input type="text" name="Full Name" placeholder="Full Name" required style="padding:0.8em; border-radius:5px; border:1px solid #ccc;">
-      <input type="email" name="Email" placeholder="Email Address" required style="padding:0.8em; border-radius:5px; border:1px solid #ccc;">
-      <input type="text" name="Institution" placeholder="Institution / Affiliation" required style="padding:0.8em; border-radius:5px; border:1px solid #ccc;">
-      <textarea name="Request" placeholder="Brief description of requested data and intended use" rows="5" required style="padding:0.8em; border-radius:5px; border:1px solid #ccc;"></textarea>
-      
-      <input type="submit" value="Submit Request" style="background-color:#000; color:#fff; border:none; padding:1em; border-radius:5px; cursor:pointer; font-weight:bold;">
-    </form>
+  <!-- Form fields -->
+  <input type="text" name="Full Name" placeholder="Full Name" required
+         style="padding:0.8em; border-radius:5px; border:1px solid #ccc;">
 
-  </div>
-</section>
+  <input type="email" name="Email" placeholder="Email Address" required
+         style="padding:0.8em; border-radius:5px; border:1px solid #ccc;">
+
+  <input type="text" name="Institution" placeholder="Institution / Affiliation" required
+         style="padding:0.8em; border-radius:5px; border:1px solid #ccc;">
+
+  <textarea name="Request"
+            placeholder="Brief description of requested data and intended use"
+            rows="5" required
+            style="padding:0.8em; border-radius:5px; border:1px solid #ccc;"></textarea>
+
+  <input type="submit" value="Submit Request"
+         style="background-color:#000; color:#fff; border:none; padding:1em;
+                border-radius:5px; cursor:pointer; font-weight:bold;">
+</form>
+
+
+
 
 
 
@@ -675,6 +689,7 @@
 
 </body>
 </html>
+
 
 
 
